@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet" />
+  <title>Lail's Bake</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "merah-brand": "#FF0000",
+            "merah-brand-dark": "#a9202c",
+            krem: "#F4F3F0",
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', "sans-serif"],
+            serif: ['"Bacasime Antique"', "serif"],
+          },
+          keyframes: {
+            mutermuter: {
+              "0%": { transform: "rotate(0deg)" },
+              "100%": { transform: "rotate(360deg)" },
+            },
+          },
+          animation: {
+            muter: "mutermuter 20s linear infinite",
+          },
+        },
+      },
+    };
+  </script>
+
+
+</head>
+
+<body>
+  <!-- Sticky Navbar -->
+  <div class="top-0 w-full fixed max-w-[768px] py-2 px-4 z-10">
+    <nav class="rounded-full bg-white py-2 px-4 flex items-center gap-5 justify-between">
+      <img src="/icon/Vector (3).png" alt="logo" class="mr-auto w-[60px]" />
+      <div class="flex gap-3">
+        <div class="flex items-center gap-1">
+          <img src="/icon/Vector (4).png" alt="" />
+          <a href="https://wa.me/+628123456789" target="_blank"
+            class="no-underline text-black hover:underline">08123456789</a>
+        </div>
+        <button
+          class="hidden sm:inline-block py-3 px-6 rounded-full font-bold border border-merah-brand text-merah-brand bg-transparant cursor-pointer transition-all duration-300 hover:bg-merah-brand hover:text-white">
+          Order Now
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <main class="w-full max-w-[768px] p-4">
+    <!-- Hero section -->
+    <section
+      class="mt-[120px] flex flex-col-reverse sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <div class="flex flex-col items-center sm:items-start gap-5">
+        <h1 class="text-[48px] leading-[48px] text-merah-brand max-w-[377px]">
+          Bakery Catering, Made Fresh for Every Occasion
+        </h1>
+        <p class="text-base max-w-[306px]">
+          Delicious baked goods tailored for your office or home events.
+        </p>
+        <button
+          class="py-3 px-6 rounded-full font-bold bg-merah-brand text-white border-none cursor-pointer transition-all duration-300 hover:bg-merah-brand-dark">
+          Order Now
+        </button>
+      </div>
+
+      <div class="flex justify-end relative">
+        <img src="/icon/Vector (2).png" alt="Rolling Logo"
+          class="w-[153px] absolute bottom-[15px] -left-[70px] sm:-left-[17px] animate-muter" />
+        <img src="/images/image 1.png" alt="Hero 
+                image" class="max-w-[300px]" />
+      </div>
+    </section>
+    <section class="flex flex-col mt-[35px] text-left sm:items-stretch">
+      <h1 class="text-[48px] text-merah-brand">Choose your need</h1>
+      <div class="flex flex-col sm:flex-row justify-between gap-4 mt-[10px] items-center sm:items-stretch">
+
+        <!-- Card 1 -->
+
+        <div class="flex flex-col w-[200px] relative pb-8">
+          <img src="/images/img 1.png" alt="" class="w-[200px]">
+          <h2 class="text-2xl text-merah-brand font-semibold mt-[15px]">
+            Breakfast Delights
+          </h2>
+          <p class="text-base leading-5 mt-[15px]">
+            Perfect for morning meetings or family brunches.
+          </p>
+          <a href="" class="text-base text-merah-brand font-semibold mt-4">
+            See all menu
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="flex flex-col w-[200px] relative pb-8">
+          <img src="/images/img 2.png" alt="" class="w-[200px]">
+          <h2 class="text-2xl text-merah-brand font-semibold mt-[15px]">
+            Lunch Boxes
+          </h2>
+          <p class="text-base leading-5 mt-[15px]">
+            Ideal for office lunches or casual gatherings.
+          </p>
+          <a href="" class="text-base text-merah-brand font-semibold mt-4">
+            See all menu
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="flex flex-col w-[200px] relative pb-8">
+          <img src="/images/img 3.png" alt="" class="w-[200px]">
+          <h2 class="text-2xl text-merah-brand font-semibold mt-[15px]">
+            Breakfast Delights
+          </h2>
+          <p class="text-base leading-5 mt-[15px]">
+            Perfect for morning meetings or family brunches.
+          </p>
+          <a href="" class="text-base text-merah-brand font-semibold mt-4">
+            See all menu
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <form action="" class="flex flex-col items-center sm:items-stretch text-center sm:text-left">
+
+      <h1 class="text-[48px] text-merah-brand">Customize your Order</h1>
+      <div class="mt-[30px] flex flex-col sm:flex-row justify-between gap-5">
+        <!-- nama -->
+        <div class="flex flex-col gap-2.5">
+          <label for=""> Nama Lengkap</label>
+          <input type="text" placeholder="Masukan Nama Anda...." required
+            class="text-base p-3 border-none rounded-lg w-full sm:w-[354px]">
+        </div>
+        <!-- no hp -->
+        <div class="flex flex-col gap-2.5">
+          <label for="">No. Handphone</label>
+          <input type="text" placeholder="+62 8XX-XXXX-XXXX" min="080000000000" required
+            class="text-base p-3 border-none rounded-lg w-full sm:w-[354px] ">
+        </div>
+      </div>
+      
+      <!-- alamt lengkap -->
+      <div class="mt-[30px] ">
+        <div class="flex flex-col gap-2.5">
+          <label for="">Alamt Lengkap</label>
+          <textarea name="alamat" placeholder="Jalan Samudra, Cluster Edelweiss, Harvest City" required
+            class="text-base p-3 rounded-lg border-none font-sans w-full sm:max-w-[735px] h-[147px] max-h-[147px]"></textarea>
+        </div>
+      </div>
+
+        <!-- pilih menu -->
+      <div class="mt-[30px] flex flex-col sm:flex-row justify-between gap-5">
+        <div class="flex flex-col gap-2.5">
+          <label for="">Pilih Menu Untuk :</label>
+          <select name="Menu" required class="text-base p-3 border-none rounded-lg w-full sm:w-[354px]">
+
+            <option value="select" disabled selected>Select An option</option>
+            <option value="breasfast" >Breakfast Delights</option>
+            <option value="select" >Lunch Boxes</option>
+            <option value="select" >Special Events</option>
+          </select>
+        </div>
+
+        <!-- Minimal box -->
+        <div class="flex flex-col gap-2.5">
+          <label for=""> Box (Minimal 10 Box)</label>
+          <input type="number" placeholder="10" required
+            class="text-base p-3 border-none rounded-lg w-full sm:w-[354px]">
+        </div>
+      </div>
+
+      <div class="flex justify-end mt-5">
+        <button class="py-3 px-6 rounded-full font-bold bg-merah-brand text-white border-none cursor-pointer transition-all duration-300 hover:bg-merah-brand-dark">Order Now</button>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>

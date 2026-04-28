@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tailwind Template</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- CONFIG -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          /* 🎨 COLORS */
+          colors: {
+            primary: "#FF0000",
+            primaryDark: "#a9202c",
+            krem: "#FAF3F0",
+          },
+
+          /* 🔤 FONTS */
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', "sans-serif"],
+            serif: ['"Bacasime Antique"', "serif"],
+          },
+
+          /* 🎬 KEYFRAMES */
+          keyframes: {
+            fadeIn: {
+              "0%": { opacity: "0" },
+              "100%": { opacity: "1" },
+            },
+            slideUp: {
+              "0%": { transform: "translateY(20px)", opacity: "0" },
+              "100%": { transform: "translateY(0)", opacity: "1" },
+            },
+            spinSlow: {
+              "0%": { transform: "rotate(0deg)" },
+              "100%": { transform: "rotate(360deg)" },
+            },
+          },
+
+          /* ⚡ ANIMATION */
+          animation: {
+            fade: "fadeIn 0.5s ease-in-out",
+            slide: "slideUp 0.5s ease-out",
+            spinSlow: "spinSlow 3s linear infinite",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-krem flex flex-col items-center justify-center h-screen gap-6">
+
+  <!-- 🎯 Contoh pemakaian -->
+  <div class="animate-fade text-2xl font-bold">
+    Fade In 👀
+  </div>
+
+  <div class="animate-slide bg-primary text-white px-4 py-2 rounded">
+    Slide Up 🚀
+  </div>
+
+  <div class="animate-spinSlow text-4xl">
+    🔄
+  </div>
+
+  <button class="hover:animate-bounce bg-primaryDark text-white px-4 py-2 rounded">
+    Hover me 😎
+  </button>
+
+</body>
+</html>
