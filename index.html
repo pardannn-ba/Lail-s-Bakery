@@ -16,7 +16,7 @@
       theme: {
         extend: {
           colors: {
-            "merah-brand": "#FF0000",
+            "merah-brand": "#CF2030",
             "merah-brand-dark": "#a9202c",
             krem: "#F4F3F0",
           },
@@ -41,7 +41,7 @@
 
 </head>
 
-<body class="flex justify-center">
+<body class="flex justify-center bg-[#F4F3F0]">
 
 
   <!-- Sticky Navbar -->
@@ -88,9 +88,9 @@
     </section>
 
     <!-- daftar menu -->
-    <section class="flex flex-col mt-[35px] text-center sm:items-stretch">
+    <section class="flex flex-col mt-[35px] text-left sm:items-stretch">
       <h1 class="text-[48px] text-merah-brand">Choose your need</h1>
-      <div class="flex flex-col sm:flex-row justify-between gap-4 mt-[10px] items-center sm:items-stretch">
+      <div class="flex flex-col sm:flex-row justify-between gap-4 mt-[10px] text-center items-center sm:items-stretch">
 
         <!-- Card 1 -->
 
@@ -195,6 +195,62 @@
           Now</button>
       </div>
     </form>
+
+    <!--  FAQ  -->
+    <section class="flex flex-col gap-5">
+      <h1 class="text-[48px] text-merah-brand">FAQ</h1>
+      <!-- pertanyaan 1 -->
+      <details class="p-3 bg-white rounded-lg cursor-pointer min-h-[48px]">
+        <summary class="font-bold">
+          Apakah Anda menerima pesanan dadakan?
+        </summary>
+        <p class="pt-4 leading-6">ya, kami menerima pesanan hingga H-1 untuk ketering sederhana. namun, untuk acara
+          besar, kami sarankan memesan minimal H-7</p>
+      </details>
+      <!-- pertanyaan 2 -->
+      <details class="p-3 bg-white rounded-lg cursor-pointer min-h-[48px]">
+        <summary class="font-bold">
+          Apakah Anda menyediakan menu khusus diet?
+        </summary>
+        <p class="pt-4 leading-6">Ya, kami dapat menyesuaikan menu untuk kebutuhan khusus seperti vegan, bebas gluten,
+          atau rendah gula.</p>
+      </details>
+      <!-- pertanyaan 3 -->
+      <details class="p-3 bg-white rounded-lg cursor-pointer min-h-[48px]">
+        <summary class="font-bold">
+          Apakah ada biaya pengiriman? </summary>
+        <p class="pt-4 leading-6">Kami menawarkan pengiriman gratis untuk pesanan di atas Rp500.000 dalam radius 10 km
+          dari dapur kami.</p>
+      </details>
+
+    </section>
+
+    <!-- footer -->
+    <footer
+      class="bg-white mt-[70px] rounded-[18px] min-h-[283px] p-5 flex flex-col sm:flex-row justify-between gap-8 relative">
+      <div class="flex flex-col">
+        <img src="/icon/Vector (5).png" alt="logo" class="w-[140px]">
+        <p class="text-[#797979] mt-4 text-sm sm:absolute sm:bottom-[23px] sm:left-5 sm:mt-0">© 2026 Bakery Catering.
+          All rights reserved.</p>
+      </div>
+
+      <!-- contact -->
+      <div class="flex flex-col w-full gap-5 sm:w-[322px]">
+        <p class="flex flex-col text-merah-brand text-sm leading-[21px] tracking-[0.2em]">
+          Dapur
+          <span class="text-black text-base leading-6 tracking-6">Jl. Roti Segar No. 10, Cluster Bougenville, Harvest
+            City, Bekasi</span>
+        </p>
+        <p class="flex flex-col text-merah-brand text-sm leading-[21px] tracking-[0.2em]">
+          WHATSAPP
+          <span class="text-black text-base leading-6 tracking-6">+62 812 3456 789</span>
+        </p>
+        <p class="flex flex-col text-merah-brand text-sm leading-[21px] tracking-[0.2em]">
+          EMAIL
+          <span class="text-black text-base leading-6 tracking-6">order@lailsbake.com</span>
+        </p>
+      </div>
+    </footer>
   </main>
 </body>
 
